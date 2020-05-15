@@ -5,7 +5,7 @@
 - Create custom content (export as orcbrew)
 - Online character storage (maybe, Django is capable of this, but I'm not sure I want to take on user and auth stuff)
 - Light/Dark theme (CSS variables? are these something I can use with Bulma?)
-
+- Responsive Character Sheet updating.
 
 # Stack
 
