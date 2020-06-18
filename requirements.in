@@ -1,0 +1,3 @@
+# requirements.in
+django
+psycopg2-binary

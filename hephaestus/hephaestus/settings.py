@@ -25,7 +25,9 @@ SECRET_KEY = ')4#6v7*kd49@gn)^d_#2x#m7y5zzi3t9*)+9w%fuv8l!*9@#ts'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '0.0.0.0'
+]
 
 
 # Application definition
@@ -75,8 +77,12 @@ WSGI_APPLICATION = 'hephaestus.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'db',
+        'PORT': 5432,
     }
 }
 
