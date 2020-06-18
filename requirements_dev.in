@@ -1,0 +1,5 @@
+# requirements_dev.in
+-c requirements.txt
+black
+flake8
+pytest
